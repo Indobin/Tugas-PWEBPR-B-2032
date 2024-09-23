@@ -4,123 +4,160 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <script src="https://cdn.tailwindcss.com"></script>
- <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="assets/css/style.css">
  <title>Tugas 2</title>
 </head>
-<body>
+<body class="bg-gray-50 min-w-[425px] min-h-[425px] lg:min-w-[1280px] lg:min-h-[1280px]">
 
-<nav class="bg-gray-200 p-4 flex justify-center items-center">
- <div class="space-x-4">
-  <a href="#" class="text-black font-semibold">Tentang Kami</a>
-  <a href="#" class="text-black font-semibold">Beranda</a>
-  <a href="#" class="text-black font-semibold">Contact Us</a>
- </div>
+  <nav class="bg-gray-200 px-4 py-4 fixed top-0 w-full z-20 flex justify-center lg:justify-center lg:flex hidden">
+    <ul class="lg:flex gap-8 font-semibold hidden">
+          <li><a href="#Tentang Kami">Tentang Kami</a></li>
+          <li><a href="#Beranda">Beranda</a></li>
+          <li><a href="#Contact Us">Contact Us</a></li>
+      </ul>
+  </nav>
 
-</nav>
-
-
-<div class="container mx-auto text-center my-8">
- <h1 class="text-4xl font-bold mb-12">Pilih Kru Anda</h1>
- <div class="grid grid-cols-2 gap-12">
-   <div class="space-y-4">
-     <!-- Luffy -->
-     <div class="bg-yellow-100  p-8 rounded-2xl flex items-center relative  m-12  mr-2">
-       <img src="img/luffy.png" alt="Luffy" class="w-42 h-64 absolute -top-8 -left-8">
-       <div class="pl-[39%]">
-         <h1 class="text-4xl font-semibold">Monkey D Luffy</h1>
-         <p class="text-black-60 font-semibold mb-6 mt-2 text-left">Si Topi Jerami</p>
-         <button class="mt-2 bg-yellow-600 w-full text-white py-2 px-12 rounded-full">Pilih Saya</button>
-       </div>
-     </div>
-
-     <div class="grid grid-cols-2 gap-4">
-
-      <div class="space-y-4">
-        <!-- Zoro -->
-        <div class="bg-green-100 p-24 rounded-2xl flex items-center justify-between relative mb-12 ml-12">
-          <img src="img/zoro 1.png" alt="Zoro" class="w-42 h-42 absolute -left-0">
-          <button class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-green-400 text-white py-2 px-4 w-[80%] rounded-full">Pilih Saya</button>
-        </div>
-    
-        <!-- Nami -->
-        <div class="bg-red-100 p-24 rounded-2xl flex items-center justify-between relative mb-12 ml-12">
-         <img src="img/nami 1.png" alt="Zoro" class="w-42 h-42 absolute -left-0">
-         <button class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-red-400 text-white py-2 px-4 w-[80%] rounded-full">Pilih Saya</button>
-       </div>
-      </div>
-      <div class="bg-blue-200 p-8 rounded-2xl flex flex-col h-full pt-2 justify-center items-center ml-8">
-       <div class="flex flex-col items-center space-y-4">
-         <img src="img/sanji 2.png" alt="Sanji" class="w-42 h-42">
-         <h2 class="text-2xl font-semibold mb-2 text-center">Sanji</h2>
-         <p class="text-black-600 font-semibold text-center">Sanji adalah kru <br> bajak laut yang bisa <br> memasak</p>
-       </div>
-       <button class="mt-4 bg-blue-500 text-white py-2 px-14 rounded-full">Pilih Saya</button>
-     </div>
-   
-    </div>
-   </div>
   
- <!-- Right Section (Usopp, Chopper, Robin, Brook, Jinbe) -->
- <div class="space-y-4">
-  <div class="grid grid-cols-1 gap-4 justify-center bg-grey-500 rounded-2xl bg-gray-100 h-auto m-12 ml-2 p-12">
-  <!-- Usopp -->
-  <div class="btn-border bg-white border-2 p-4 rounded-2xl flex items-center space-x-4">
-    <img src="img/god_usopp 2.png" alt="Usopp" class="w-16 h-16">
-    <div class="ml-4">
-      <h1 class="font-semibold text-black-600 mb-2 text-lg text-left">Usopp</h1>
-      <button class="btn-kanan text-white py-1 px-[60px]  rounded-full">Pilih Saya</button>
+  <div class="flex flex-col items-center lg:flex-row lg:justify-center mt-12">
+      <p class="text-4xl font-bold text-center mt-10 mb-2 lg:mt-16 lg:mb-12">Pilih Kru Anda</p>
   </div>
-  </div>
+  <main class="flex flex-col lg:flex-row lg:justify-center lg:items-start gap-8 mt-2"> 
+      <div class="flex flex-col items-center gap-6 lg:mt-[-7rem]">
+          <!-- Card Luffy -->
+          <div class="relative bg-yellow-100 w-[280px] h-[290px] rounded-3xl flex lg:flex-row flex-col justify-center items-center m-auto mt-28 lg:w-[550px] lg:h-[200px] ">
+              <div class="flex justify-center">
+                  <img src="assets/img/luffy.png" alt="Luffy" class="w-[15rem] lg:w-[18rem] absolute -top-[3rem] lg:relative lg:-top-[3rem] lg:left-[-2rem]">
+              </div>
+              <div class="text-center lg:text-left mt-40 lg:mt-0 lg:pr-5 lg:flex lg:flex-col-reverse">
+                  <button class="w-[200px] lg:w-full text-white text-xl btn-luffy rounded-2xl">Pilih Saya</button>
+                  <p class="text-2xl lg:text-3xl mt-3 lg:mb-10 font-medium">Monkey D Luffy<span class="block text-base lg:text-sm lg:mt-2">Si Topi Jerami</span></p>
+              </div>
+          </div>
+          
+          <!-- Card zoro,nami,sanji -->
+          <div class="lg:flex lg:gap-4">
+              <div class="lg:w-[230px] lg:mr-7"> 
+                  <div class="bg-green-100 relative w-[280px] h-[230px] rounded-3xl justify-center items-center m-auto lg:w-[230px] lg:h-[180px]">
+                      <img src="assets/img/zoro 1.png" alt="zoro" class="absolute w-full h-full max-w-[275px] max-h-[230px] object-contain pt-1">
+                      <div class="flex flex-col items-center justify-center ">
+                          <button class="btn-green justify-center font-medium text-white w-[210px] h-[45px] rounded-[15px] text-[20px] z-10 lg:w-[170px] mt-[10rem] lg:mt-[120px]">Pilih Saya</button>
+                      </div>
+                  </div>
 
-  <!-- Chopper -->
-  <div class="btn-border bg-white border-2 p-4 rounded-2xl flex items-center space-x-4">
-    <img src="img/chopper 2.png" alt="Chopper" class="w-16 h-16">
-    <div class="ml-4">
-      <h1 class="font-semibold text-black-600 mb-2 text-lg text-left">Chopper</h1>
-      <button class="btn-kanan text-white py-1 px-[60px] rounded-full">Pilih Saya</button>
-  </div>
-  </div>
+                  <div class="bg-red-100 relative w-[280px] h-[230px] rounded-3xl justify-center items-center m-auto mt-8 mb-8 lg:w-[230px] lg:h-[180px]">
+                      <img src="assets/img/nami 1.png" alt="nami" class="absolute w-full h-full max-w-[275px] max-h-[230px] object-contain pt-1">
+                      <div class="flex flex-col items-center justify-center ">
+                          <button class="btn-red justify-center font-medium text-white w-[210px] h-[45px] rounded-[15px] text-[20px] z-10 lg:w-[170px] mt-[10rem] lg:mt-[120px]">Pilih Saya</button>
+                      </div>
+                  </div>
+              </div>
 
-  <!-- Robin -->
-  <div class="btn-border bg-white border-2 p-4 rounded-2xl flex items-center space-x-4">
-    <img src="img/robin 2.png" alt="Robin" class="w-16 h-16">
-    <div class="ml-4">
-      <h1 class="font-semibold text-black-600 mb-2 text-lg text-left">Robin</h1>
-      <button class="btn-kanan text-white py-1 px-[60px] rounded-full">Pilih Saya</button>
-  </div>
-  </div>
-</div>
-  <!-- Brook & Jinbe -->
-  <div class="grid grid-cols-2 gap-4 mt-4 justify-center bg-gray-100 rounded-2xl p-8 h-auto m-12 ml-2">
-    <!-- Brook Section -->
-    <div class="flex items-center justify-between space-x-2">
-      <!-- Image -->
-      <img src="img/brook 2.png" alt="Brook" class="w-36 h-36">
-      <!-- Text and Button Section -->
-      <div class="text-center">
-        <h1 class="font-semibold text-gray-800 mb-4 text-lg text-left">Brook</h1>
-        <button class="btn-kanan bg-green-500 text-white py-5 px-6 rounded-xl ">Pilih Saya</button>
+              <div class="flex flex-col bg-blue-100 relative w-[280px] h-[330px] rounded-3xl justify-center items-center m-auto lg:mb-8 lg:w-[280px] lg:h-[392px]">
+                  <img src="assets/img/sanji 2.png" alt="sanji" class="w-[15rem] absolute -top-8 lg:top-2 pt-1 lg:w-[12rem]">
+                  <div class="flex flex-col lg:flex-col-reverse items-center lg:text-center mt-40 lg:mt-[10rem]">
+                      <button class="btn-blue justify-center font-medium text-white w-[210px] h-[45px] rounded-[15px] text-[20px] mb-4 z-10 lg:w-[170px] mt-[-1rem]">Pilih Saya</button>
+                      <p class="text-2xl pb-2 lg:mb-5 font-medium text-center">Sanji<span class="block text-xs text-center max-w-[12rem] lg:max-w-[8rem]  lg:mt-4">Sanji adalah kru bajak laut yang bisa memasak.</span></p>
+                  </div>
+              </div>
+
+          </div>
       </div>
-    </div>
+          
+      <div class="flex flex-col justify-center items-center gap-6 lg:ml-8">
+          <!-- Card god usopp, chopper, robin -->
+          <div class="hidden lg:block bg-gray-200 w-[560px] p-6 rounded-3xl">
+              <div class="bg-white relative w-[512px] h-[100px] rounded-3xl flex items-center justify-start px-6 py-4">
+                  <img src="assets/img/god_usopp 2.png" alt="god. usopp" class="w-[4rem]">
+                  <div class="text-center lg:text-left mt-40 lg:mt-0 lg:pr-5 lg:flex lg:flex-col-reverse z-10">
+                      <button class="btn-beige w-[180px] max-h-8 rounded-[15px]">Pilih Saya</button>
+                      <p class="lg:text-xl font-medium">Usopp</p>
+                  </div>
+              </div>
+              <div class="bg-white relative w-[512px] h-[100px] rounded-3xl flex items-center justify-start px-6 py-4 mt-2">
+                  <img src="assets/img/chopper 2.png" alt="chopper" class="w-[4rem]">
+                  <div class="text-center lg:text-left mt-40 lg:mt-0 lg:pr-5 lg:flex lg:flex-col-reverse z-10">
+                      <button class="btn-beige w-[180px] max-h-8 rounded-[15px]">Pilih Saya</button>
+                      <p class="lg:text-xl font-medium">Chopper</p>
+                  </div>
+              </div>
+              <div class="bg-white relative w-[512px] h-[100px] rounded-3xl flex items-center justify-start px-6 py-4 mt-2">
+                  <img src="assets/img/robin 2.png" alt="robin" class="w-[4rem]">
+                  <div class="text-center lg:text-left mt-40 lg:mt-0 lg:pr-5 lg:flex lg:flex-col-reverse z-10">
+                      <button class="btn-beige w-[180px] max-h-8 rounded-[15px]">Pilih Saya</button>
+                      <p class="lg:text-xl font-medium">Robin</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- god usopp, chopper, robin (425 px) -->
+          <div class="lg:hidden flex flex-col gap-4">
+              <div class="bg-gray-200 relative w-[280px] h-[230px] rounded-3xl justify-center items-center m-auto lg:w-[230px] lg:h-[230px]">
+                  <img src="assets/img/god_usopp 2.png" alt="god_usopp" class="absolute w-full h-full max-w-[275px] max-h-[230px] object-contain pt-1">
+                  <div class="flex flex-col items-center justify-center ">
+                      <button class="btn-beige justify-center font-medium text-white w-[210px] h-[45px] rounded-[15px] text-[20px] z-10 lg:w-[170px] mt-40">Pilih Saya</button>
+                  </div>
+              </div>
+              <div class="bg-gray-200 relative w-[280px] h-[230px] rounded-3xl justify-center items-center m-auto mt-4 lg:w-[230px] lg:h-[230px]">
+                  <img src="assets/img/chopper 2.png" alt="chopper" class="absolute w-full h-full max-w-[275px] max-h-[230px] object-contain pt-1">
+                  <div class="flex flex-col items-center justify-center ">
+                      <button class="btn-beige justify-center font-medium text-white w-[210px] h-[45px] rounded-[15px] text-[20px] z-10 lg:w-[170px] mt-40">Pilih Saya</button>
+                  </div>
+              </div>
+              <div class="bg-gray-200 relative w-[280px] h-[230px] rounded-3xl justify-center items-center m-auto mt-4 lg:w-[230px] lg:h-[230px]">
+                  <img src="assets/img/robin 2.png" alt="robin" class="absolute w-full h-full max-w-[275px] max-h-[230px] object-contain pt-1">
+                  <div class="flex flex-col items-center justify-center ">
+                      <button class="btn-beige justify-center font-medium text-white w-[210px] h-[45px] rounded-[15px] text-[20px] z-10 lg:w-[170px] mt-40">Pilih Saya</button>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Card brook & jinbe -->
+          <div class="hidden lg:block bg-gray-200 w-[560px] rounded-3xl mb-8">
+              <div class="lg:w-[550px] flex justify-around items-center h-[175px] rounded-3xl m-auto mt-8">
+                  <div class="relative flex items-center justify-start mb-6">
+                      <img src="assets/img/brook 2.png" alt="brook" class="w-[100px] mb-4 me-2">
+                      <div class="text-center lg:text-left mt-40 lg:mt-0 lg:pr-5 lg:flex lg:flex-col-reverse z-10">
+                          <button class="btn-beige w-[120px] h-[120px] max-h-12 rounded-[5px]">Pilih Saya</button>
+                          <p class="lg:text-xl font-medium">Brook</p>
+                      </div>
+                  </div>
+                  <div class="relative flex items-center justify-start mb-6">
+                      <img src="assets/img/jinbe 2.png" alt="jinbe" class="w-[100px] me-3">
+                      <div class="text-center lg:text-left mt-40 lg:mt-0 lg:pr-5 lg:flex lg:flex-col-reverse z-10">
+                          <button class="btn-beige w-[120px] h-[120px] max-h-12 rounded-[5px]">Pilih Saya</button>
+                          <p class="lg:text-xl font-medium">Jinbe</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <!-- Card Brook & Jinbe (425px) -->
+          <div class="lg:hidden flex flex-col gap-4">
+              <div class="bg-yellow-100 relative w-[280px] h-[230px] rounded-3xl justify-center items-center m-auto mt-2 lg:w-[230px] lg:h-[230px]">
+                  <img src="assets/img/brook 2.png" alt="brook" class="absolute w-full h-full max-w-[275px] max-h-[230px] object-contain pt-1">
+                  <div class="flex flex-col items-center justify-center ">
+                      <button class="btn-yellow justify-center font-medium text-white w-[210px] h-[45px] rounded-[15px] text-[20px] z-10 lg:w-[170px] mt-40">Pilih Saya</button>
+                  </div>
+              </div>
+
+              <div class="bg-blue-100 relative w-[280px] h-[230px] rounded-3xl justify-center items-center m-auto mt-4 mb-20 lg:w-[230px] lg:h-[230px]">
+                  <img src="assets/img/jinbe 2.png" alt="jinbe" class="absolute w-full h-full max-w-[275px] max-h-[230px] object-contain pt-1">
+                  <div class="flex flex-col items-center justify-center ">
+                      <button class="btn-blue justify-center font-medium text-white w-[210px] h-[45px] rounded-[15px] text-[20px] z-10 lg:w-[170px] mt-40">Pilih Saya</button>
+                  </div>
+              </div>
+          </div>
+          <!--navbar 425 px  -->
+<footer class="fixed bottom-0 w-full bg-gray-200 p-4 lg:hidden ">
+  <ul class="flex justify-around text-gray-700 font-semibold">
+      <li><a href="#Tentang Kami">Tentang Kami</a></li>
+      <li><a href="#Beranda">Beranda</a></li>
+      <li><a href="#Contact Us">Contact Us</a></li>
+  </ul>
+</footer>
+  </main>
+
   
-    <!-- Jinbe Section -->
-    <div class="flex items-center justify-between space-x-2">
-      <!-- Image -->
-      <img src="img/jinbe 2.png" alt="Jinbe" class="w-36 h-36">
-      <!-- Text and Button Section -->
-      <div class="text-center">
-        <h1 class="font-semibold text-gray-800 mb-4 text-lg text-left">Jinbe</h1>
-        <button class="btn-kanan bg-gray-500 text-white py-5 px-6 rounded-xl ">Pilih Saya</button>
-      </div>
-    </div>
-  </div>
   
-</div>
-</div>
-
- </div>
-</div>
-
-
 </body>
 </html>
